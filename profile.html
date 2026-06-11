@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" href="img/user.png" type="image/png">
+    <style>
+        :root{
+            --black:#000000;
+            --red:#0026ff;
+            --gray:#262626;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+        body{
+            background:rgb(20, 19, 19);
+            color:white
+        }
+        header{
+            background:var(--gray);
+            font-family:'Segoe UI',sans-serif;
+            color:white;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0; 
+        }
+        p{
+            font-family:'Segoe UI',sans-serif;
+            line-height:1.6;
+            margin: 10px;
+        }
+        .logo{
+            font-size:2rem;
+            font-family:'Segoe UI',sans-serif;
+            font-weight:bold;
+        }
+        .logo span{
+            color:white;
+            margin-left:10px;
+            margin-bottom:0px;
+        }
+        .logo img{
+            width: 45px;
+            height: auto;
+            margin-right: 10px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:18px;
+            font-family:'Segoe UI',sans-serif;
+        }
+        nav a:hover{
+            color:var(--red);
+        }
+        .home{
+            display:flex;
+            margin-top:20px;
+            padding-top:100px;
+            justify-content:center;
+        }
+        .himg {
+            width: 600px;
+            height:auto;
+            margin-left:0;
+        }
+        .hcontent {
+            width: 400px;
+            padding: 20px;
+        }
+        .education{
+            display:flex;
+            margin-top:20px;
+            padding-top:100px;
+            justify-content:center;
+        }
+        .skills{
+            display:flex;
+            margin-top:20px;
+            padding-top:100px;
+            padding-bottom:50px;
+            justify-content:center;
+        }
+        
+        .scontent {
+            width: 100%;
+            padding: 20px;
+        }
+        .contact{
+            margin-top:20px;
+            margin-left:300px;
+            
+            
+        }
+        .cimg {
+            width: 600px;
+            height:auto;
+            margin-left:0;
+        }
+        .ccontent {
+            width: 700px;
+            padding: 20px;
+        }
+        .econtent {
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/user.png" alt="User Icon"><span>My Profile</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="himg">
+            <img src="img/dv.png" alt="Profile Background" style="width:100%; height:auto;">
+        </div>
+        <div class="hcontent" >
+            <h1>Welcome to My Profile</h1><br>
+            <h2>Hi, I'm Joe</h2>
+            <h3>I am a Software Developer</h3><br>
+            <p>Hi, I'm Joe, a second-year B.Tech student in Artificial Intelligence and Data Science at Anna University. I am a passionate developer with a deep interest in algorithm design, predictive modeling, and data-driven problem solving. Beyond the classroom, I enjoy exploring the intersection of software development and AI, constantly seeking to apply my skills to real-world challenges through hackathons and personal projects.</p>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section class="education" id="education">
+        <div>
+            <h1 style="text-align: center;">Education</h1><hr><br>
+            <div class="econtent">
+                <p><strong>Degree:</strong> Bachelor of Technology in Artificial Intelligence and Data Science</p><br>
+                <p><strong>University/Duration:</strong> Anna University | 2024 – Present</p><br>
+                <p><strong>Key Coursework:</strong> <br>
+                <ul style="margin-left: 20px;"><li>Artificial Intelligence</li><li>Data Structures & Algorithms</li><li>Database Management Systems</li><li>Machine Learning</li><li>Operating Systems</li></ul></p><br>
+                <p><strong>Academic Focus:</strong> Specializing in algorithm design, predictive modeling, and data-driven problem solving.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="skills" id="skills">
+        <div class="scontent">
+            <h1 style="text-align: center;">Skills</h1><hr><br>
+            <div style="display: flex;justify-content: space-between;"><div style="margin: 20px;"><p style="text-align: left;"><strong>Programming Languages:</strong><ol style="margin-left: 20px;"><li>Python</li><li>Java</li><li>C++</li><li>JavaScript</li></ol></p></div>
+            <div style="margin: 20px;"><p style="text-align: center;margin-right: 20px;"><strong>Technologies:</strong><ol style="margin-left: 20px;margin-right: 40px;"><li>TensorFlow</li><li>PyTorch</li><li>React</li><li>Node.js</li></ol></p></div>
+            <div style="margin: 20px;"><p><strong>Tools:</strong><ol style="margin-left: 20px;"><li>Git</li><li>Docker</li><li>AWS</li></ol></p></div>
+            <div style="margin: 20px;"><p><strong>Soft Skills:</strong><ol style="margin-left: 20px;"><li>Problem-solving</li><li>Teamwork</li><li>Communication</li></ol></p></div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <div class="ccontent" style="padding:20px;">
+            <div class="contact-info">
+                <h1 style="text-align: center;">Contact Information</h1><br>
+                <p>I am currently exploring internship opportunities in data exploration and database management.</p>
+                <p><strong>Email:</strong> joe@gmail.com</p>
+                <p><strong>GitHub:</strong> https://github.com/ajayjoel18</p>
+                <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/ajayjoel</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
